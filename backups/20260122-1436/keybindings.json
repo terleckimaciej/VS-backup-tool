@@ -59,17 +59,18 @@
     },
     {
         "key": "alt+g",
-        "command": "workbench.view.scm",
+        "command": "-workbench.view.scm",
         "when": "workbench.scm.active"
     },
     {
         "key": "alt+e",
-        "command": "workbench.view.explorer",
+        "command": "-workbench.view.explorer",
         "when": "viewContainer.workbench.view.explorer.enabled"
     },
     {
         "key": "alt+x",
-        "command": "workbench.view.extensions"
+        "command": "-workbench.view.extensions",
+        "when": "workbench.view.extensions.enabled"
     },
     {
         "key": "alt+f",

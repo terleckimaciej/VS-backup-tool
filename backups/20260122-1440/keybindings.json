@@ -69,7 +69,8 @@
     },
     {
         "key": "alt+x",
-        "command": "workbench.view.extensions"
+        "command": "workbench.view.extensions",
+        "when": "workbench.view.extensions.enabled"
     },
     {
         "key": "alt+f",
