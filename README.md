@@ -1,13 +1,16 @@
-# VS Code Configuration Manager
+# VS-settings-backup-tool
 
-This project provides a simple, automated way to synchronize your Visual Studio Code environment across different Windows machines.
+**Git-Based VS Code Configuration Manager**
 
-Instead of manually copying settings or relying on cloud sync, this tool uses a Git repository as the single source of truth for your configuration. It allows you to:
+This tool provides a simple, automated way to synchronize your Visual Studio Code environment (settings, keybinds and extensions) across different Windows machines using a Git repository as the single source of truth.
 
-1.  **Backup** your current VS Code setup (extensions, settings, keybindings) to this repository.
-2.  **Restore** that exact setup on any new machine with a single script.
+## Why use this?
 
-It is designed to be lightweight, transparent, and version-controllable.
+While VS Code has a built-in "Settings Sync", the tool offers a transparent, file-based alternative for the full control. It is particularly useful if you want to:
+
+- **Sync without accounts:** Easily transfer your personal configuration to a work laptop where logging in with a personal account is restricted.
+- **Version control your settings:** Track changes to your `settings.json` over time using Git history.
+- **Avoid cloud dependency:** Keep your configuration backup strictly under your own control.
 
 ## Requirements
 
@@ -24,7 +27,7 @@ If you are setting up this repository for the first time and want to save your c
 .\update_repo.ps1
 ```
 
-This will populate the empty repository with your existing settings, keybindings, and extensions list. You can then commit these files to Git.
+This will populate the repository (or rather replace author's config ;) with your existing settings, keybindings, and extensions list. You can then commit these files to Git.
 
 ### 2. Restore (Apply Settings to VS Code)
 Use this command when setting up a new machine or reverting changes. It will automatically backup your existing local config before overwriting it.
