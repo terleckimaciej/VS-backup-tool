@@ -1,13 +1,13 @@
-# Skrypt aktualizujący repozytorium na podstawie obecnego stanu VS Code
+# Script to update the repository based on the current VS Code state
 $ErrorActionPreference = "Stop"
 
 $VSCodeUserDir = "$env:APPDATA\Code\User"
 $RepoDir = $PSScriptRoot
 
-Write-Host "=== Aktualizacja repozytorium (Backup) ===" -ForegroundColor Cyan
+Write-Host "=== Repository Update (Backup) ===" -ForegroundColor Cyan
 
-# 1. Kopiowanie settings.json i keybindings.json z systemu do repo
-Write-Host "Kopiowanie plików konfiguracyjnych do repozytorium..." -ForegroundColor Yellow
+# 1. Copying settings.json and keybindings.json from system to repo
+Write-Host "Copying configuration files to repository..." -ForegroundColor Yellow
 if (Test-Path "$VSCodeUserDir\settings.json") {
     Copy-Item "$VSCodeUserDir\settings.json" "$RepoDir\settings.json" -Force
 }
@@ -15,9 +15,9 @@ if (Test-Path "$VSCodeUserDir\keybindings.json") {
     Copy-Item "$VSCodeUserDir\keybindings.json" "$RepoDir\keybindings.json" -Force
 }
 
-# 2. Generowanie listy rozszerzeń
-Write-Host "Generowanie listy zainstalowanych rozszerzeń..." -ForegroundColor Yellow
+# 2. Generating extensions list
+Write-Host "Generating list of installed extensions..." -ForegroundColor Yellow
 cmd /c "code --list-extensions" > "$RepoDir\extensions.txt"
 
-Write-Host "=== Zakończono! ===" -ForegroundColor Green
-Write-Host "Twoje repozytorium jest teraz zaktualizowane. Możesz wykonać git commit." -ForegroundColor Green
+Write-Host "=== Completed! ===" -ForegroundColor Green
+Write-Host "Your repository is now updated. You can commit the changes." -ForegroundColor Green
