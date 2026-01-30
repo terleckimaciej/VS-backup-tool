@@ -36,4 +36,12 @@
     "explorer.compactFolders": false,
     "editor.cursorBlinking": "smooth",
     "material-icon-theme.hidesExplorerArrows": true,
+    "terminal.integrated.commandsToSkipShell": [
+        "workbench.view.scm",
+        "workbench.view.explorer",
+        "workbench.view.extensions",
+        "list.focus",
+        "workbench.action.chat.startVoiceChat",
+        "workbench.action.chat.openagent"
+    ],
 }

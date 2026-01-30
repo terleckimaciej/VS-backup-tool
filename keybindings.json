@@ -10,44 +10,25 @@
         "command": "notebook.cell.execute",
         "when": "notebookCellListFocused && notebookMissingKernelExtension && !notebookCellExecuting && notebookCellType == 'code' || notebookCellListFocused && !notebookCellExecuting && notebookCellType == 'code' && notebookKernelCount > 0 || notebookCellListFocused && !notebookCellExecuting && notebookCellType == 'code' && notebookKernelSourceCount > 0"
     },
-    {
-        "key": "ctrl+alt+enter",
-        "command": "-notebook.cell.execute",
-        "when": "notebookCellListFocused && notebookMissingKernelExtension && !notebookCellExecuting && notebookCellType == 'code' || notebookCellListFocused && !notebookCellExecuting && notebookCellType == 'code' && notebookKernelCount > 0 || notebookCellListFocused && !notebookCellExecuting && notebookCellType == 'code' && notebookKernelSourceCount > 0"
-    },
-    {
-        "key": "ctrl+u",
-        "command": "-cursorUndo",
-        "when": "textInputFocus"
-    },
-    {
-        "key": "ctrl+u",
-        "command": "workbench.action.focusActiveEditorGroup"
-    },
-    {
+                {
         "key": "ctrl+shift+i",
         "command": "inlineChat.start",
         "when": "editorFocus && inlineChatHasEditsAgent && inlineChatPossible && !editorReadonly && !editorSimpleInput || editorFocus && inlineChatHasNotebookAgent && inlineChatPossible && !editorReadonly && !editorSimpleInput && activeEditor == 'workbench.editor.notebook' || editorFocus && inlineChatHasNotebookInline && inlineChatPossible && !editorReadonly && !editorSimpleInput && activeEditor == 'workbench.editor.notebook'"
     },
     {
-        "key": "ctrl+i",
-        "command": "-inlineChat.start",
-        "when": "editorFocus && inlineChatHasEditsAgent && inlineChatPossible && !editorReadonly && !editorSimpleInput || editorFocus && inlineChatHasNotebookAgent && inlineChatPossible && !editorReadonly && !editorSimpleInput && activeEditor == 'workbench.editor.notebook' || editorFocus && inlineChatHasNotebookInline && inlineChatPossible && !editorReadonly && !editorSimpleInput && activeEditor == 'workbench.editor.notebook'"
+    "key": "ctrl+i",
+    "command": "workbench.action.chat.openagent",
+    "when": "config.chat.agent.enabled && !chatSetupDisabled && !chatSetupHidden && !inChatInput"
     },
     {
         "key": "ctrl+i",
-        "command": "workbench.action.chat.openagent",
-        "when": "config.chat.agent.enabled && !chatSetupDisabled && !chatSetupHidden"
+        "command": "workbench.action.focusActiveEditorGroup",
+        "when": "chatViewletVisible && inChatInput"
     },
     {
         "key": "ctrl+shift+i",
         "command": "-workbench.action.chat.openagent",
         "when": "config.chat.agent.enabled && !chatSetupDisabled && !chatSetupHidden"
-    },
-    {
-        "key": "ctrl+shift+i",
-        "command": "-workbench.action.toggleDevTools",
-        "when": "isDevelopment"
     },
     {
         "key": "ctrl+tab",
@@ -76,6 +57,14 @@
         "key": "alt+f",
         "command": "list.find",
         "when": "list.focus"
-    }
+    },
+    {
+    "key": "ctrl+u",
+    "command": "workbench.action.chat.startVoiceChat"
+    },
+    {
+        "key": "alt+q",
+        "command": "workbench.action.focusActiveEditorGroup"
+    },
 ]
 
