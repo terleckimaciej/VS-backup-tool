@@ -60,16 +60,17 @@
     {
         "key": "alt+g",
         "command": "workbench.view.scm",
-        "when": "workbench.scm.active"
+        "when": "workbench.scm.active || terminalFocus"
     },
     {
         "key": "alt+e",
         "command": "workbench.view.explorer",
-        "when": "viewContainer.workbench.view.explorer.enabled"
+        "when": "viewContainer.workbench.view.explorer.enabled || terminalFocus"
     },
     {
         "key": "alt+x",
-        "command": "workbench.view.extensions"
+        "command": "workbench.view.extensions",
+        "when": "terminalFocus || !terminalFocus"
     },
     {
         "key": "alt+f",

@@ -35,4 +35,5 @@
     "workbench.tree.indent": 30,
     "explorer.compactFolders": false,
     "editor.cursorBlinking": "smooth",
+    "material-icon-theme.hidesExplorerArrows": true,
 }
