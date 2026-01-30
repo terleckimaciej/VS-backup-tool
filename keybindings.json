@@ -10,7 +10,7 @@
         "command": "notebook.cell.execute",
         "when": "notebookCellListFocused && notebookMissingKernelExtension && !notebookCellExecuting && notebookCellType == 'code' || notebookCellListFocused && !notebookCellExecuting && notebookCellType == 'code' && notebookKernelCount > 0 || notebookCellListFocused && !notebookCellExecuting && notebookCellType == 'code' && notebookKernelSourceCount > 0"
     },
-                {
+    {
         "key": "ctrl+shift+i",
         "command": "inlineChat.start",
         "when": "editorFocus && inlineChatHasEditsAgent && inlineChatPossible && !editorReadonly && !editorSimpleInput || editorFocus && inlineChatHasNotebookAgent && inlineChatPossible && !editorReadonly && !editorSimpleInput && activeEditor == 'workbench.editor.notebook' || editorFocus && inlineChatHasNotebookInline && inlineChatPossible && !editorReadonly && !editorSimpleInput && activeEditor == 'workbench.editor.notebook'"
@@ -39,7 +39,7 @@
         "command": "workbench.action.previousEditorInGroup"
     },
     {
-        "key": "alt+g",
+        "key": "alt+s",
         "command": "workbench.view.scm",
         "when": "workbench.scm.active || terminalFocus"
     },
