@@ -59,12 +59,29 @@
         "when": "list.focus"
     },
     {
-    "key": "ctrl+u",
-    "command": "workbench.action.chat.startVoiceChat"
+        "key": "ctrl+u",
+        "command": "workbench.action.chat.startVoiceChat"
     },
     {
         "key": "alt+q",
         "command": "workbench.action.focusActiveEditorGroup"
     },
+    // pull with alt+l 
+    {
+        "key": "alt+l",
+        "command": "git.pullRef",
+        "when": "scmProvider == 'git'"
+    },
+    // commit and push with ctrl+alt+p when the scm input is focused
+    {
+        "key": "ctrl+alt+p",
+        "command": "git.commitAndPush",
+        "when": "activeViewlet == 'workbench.view.scm'"
+    },
+    {
+        "key": "alt+b",
+        "command": "git.checkout",
+        "when": "!operationInProgress"
+    }
 ]
 
