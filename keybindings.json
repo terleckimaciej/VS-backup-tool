@@ -82,6 +82,12 @@
         "key": "alt+b",
         "command": "git.checkout",
         "when": "!operationInProgress"
+    },
+    // git fetch 
+    {
+        "key": "shift+alt+l",
+        "command": "git.fetchAll",
+        "when": "scmProvider == 'git'"
     }
 ]
 
