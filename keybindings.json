@@ -83,11 +83,15 @@
         "command": "git.checkout",
         "when": "!operationInProgress"
     },
-    // git fetch 
     {
         "key": "shift+alt+l",
         "command": "git.fetchAll",
         "when": "scmProvider == 'git'"
-    }
+    },
+    {
+    "key": "escape",
+    "command": "workbench.action.focusActiveEditorGroup",
+    "when": "terminalFocus"
+    }, //tutaj mozna jeszcze dodac inne focusy - jako opcja po prostu wychodzenia z nich 
 ]
 
