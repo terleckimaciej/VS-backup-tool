@@ -11,6 +11,7 @@
     "datawrangler.notebookIntegration.enabled": false,
     "dataWrangler.outputRenderer.enabled": false,
     "chat.viewSessions.orientation": "stacked",
+    "workbench.tree.renderIndentGuides": "always",
     "github.copilot.nextEditSuggestions.enabled": true,
     "chat.editor.fontSize": 13,
     "explorer.fileNesting.patterns": {
@@ -44,4 +45,11 @@
         "workbench.action.chat.startVoiceChat",
         "workbench.action.chat.openagent"
     ],
+    "chat.tools.urls.autoApprove": {
+        "https://huggingface.co": {
+            "approveRequest": false,
+            "approveResponse": true
+        }
+    },
+    "terminal.integrated.defaultProfile.windows": "Git Bash",
 }
