@@ -92,6 +92,30 @@
     "key": "escape",
     "command": "workbench.action.focusActiveEditorGroup",
     "when": "terminalFocus"
+    },
+    {
+        "key": "insert",
+        "command": "-editor.action.toggleOvertypeInsertMode"
     }, //tutaj mozna jeszcze dodac inne focusy - jako opcja po prostu wychodzenia z nich 
+     //terminal - scroll między terminalami
+    {
+
+        "key": "alt+`",
+
+        "command": "workbench.action.terminal.focusNext",
+
+        "when": "terminalFocus"
+
+    },
+
+    //terminal - toggle fullscreena
+
+    {
+
+        "key": "ctrl+alt+`",
+
+        "command": "workbench.action.toggleMaximizedPanel"
+
+    }
 ]
 
