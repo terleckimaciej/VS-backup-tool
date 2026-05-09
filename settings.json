@@ -42,7 +42,11 @@
         "workbench.view.extensions",
         "list.focus",
         "workbench.action.chat.startVoiceChat",
-        "workbench.action.chat.openagent"
+        "workbench.action.chat.openagent",
+        "workbench.action.focusActiveEditorGroup",
+        "workbench.action.terminal.killActiveTab",
+        "workbench.action.terminal.kill",
+        "workbench.action.terminal.newWithProfile"
     ],
     "chat.tools.urls.autoApprove": {
         "https://huggingface.co": {
@@ -59,4 +63,5 @@
     },
     "chat.viewSessions.orientation": "stacked",
     "workbench.colorTheme": "Dark Modern",
+
 }
