@@ -134,11 +134,11 @@
     "command": "workbench.action.terminal.copyLastCommandOutput",
     "when": "terminalFocus"
     },
-
+    
     {
-    "key": "ctrl+enter",
-    "command": "claude-code.acceptProposedChanges",
-    "when": "editorTextFocus"
+        "key": "ctrl+enter",
+        "command": "claude-vscode.acceptProposedDiff",
+        "when": "claude-vscode.viewingProposedDiff"
     }
 ]
 
