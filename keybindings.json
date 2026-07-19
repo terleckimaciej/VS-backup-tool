@@ -99,6 +99,12 @@
     }, //tutaj mozna jeszcze dodac inne focusy - jako opcja po prostu wychodzenia z nich 
      //terminal - scroll między terminalami
     {
+        "key": "alt+shift+`",
+        "command": "workbench.action.terminal.focusPrevious",
+        "when": "terminalFocus"
+    },
+
+    {
         "key": "alt+`",
         "command": "workbench.action.terminal.focusNext",
         "when": "terminalFocus"
@@ -127,6 +133,12 @@
     "key": "ctrl+alt+c",
     "command": "workbench.action.terminal.copyLastCommandOutput",
     "when": "terminalFocus"
-}
+    },
+
+    {
+    "key": "ctrl+enter",
+    "command": "claude-code.acceptProposedChanges",
+    "when": "editorTextFocus"
+    }
 ]
 

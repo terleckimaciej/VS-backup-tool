@@ -64,5 +64,6 @@
     "chat.viewSessions.orientation": "stacked",
     "workbench.colorTheme": "Dark Modern",
     "claudeCode.preferredLocation": "panel",
+    "window.menuBarVisibility": "compact",
 
 }
