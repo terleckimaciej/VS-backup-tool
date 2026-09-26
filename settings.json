@@ -29,7 +29,8 @@
     },
     "workbench.editorAssociations": {
         "*.copilotmd": "vscode.markdown.preview.editor",
-        "*.db": "sqlite-viewer.view"
+        "*.db": "sqlite-viewer.view",
+        "*.md": "vscode.markdown.preview.editor"
     },
     "workbench.iconTheme": "material-icon-theme",
     "workbench.tree.indent": 30,
@@ -46,7 +47,8 @@
         "workbench.action.focusActiveEditorGroup",
         "workbench.action.terminal.killActiveTab",
         "workbench.action.terminal.kill",
-        "workbench.action.terminal.newWithProfile"
+        "workbench.action.terminal.newWithProfile",
+        "-claude-vscode.focus"
     ],
     "chat.tools.urls.autoApprove": {
         "https://huggingface.co": {
@@ -65,5 +67,6 @@
     "workbench.colorTheme": "Dark Modern",
     "claudeCode.preferredLocation": "panel",
     "window.menuBarVisibility": "compact",
-
+    "window.enableMenuBarMnemonics": false,
+    "window.customMenuBarAltFocus": false
 }
